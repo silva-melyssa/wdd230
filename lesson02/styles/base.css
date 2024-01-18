@@ -1,0 +1,52 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: black;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 20px;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Bree Serif', Times, serif;
+    color: #0077cc;
+}
+
+a {
+    color: #ec7e00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
