@@ -36,7 +36,7 @@ h2 {
 }
 
 h1 {
-    color: aliceblue;
+    color: white;
     font-size: 2.5rem;
 }
 
@@ -55,7 +55,7 @@ h3 {
     border: 1px solid rgba(0, 0, 0, .1);
     text-align: center;
     background-color: #cd273a;
-    color: aliceblue;
+    color: white;
     margin: 0;
     height: 100%;
 }
@@ -131,7 +131,7 @@ p {
 }
 
 footer {
-    background-color: rgb(229, 35, 72);
+    background-color: rgb(4, 4, 4);
     color: white;
     padding: 20px;
     margin-top: 50px;
