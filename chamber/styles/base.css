@@ -395,9 +395,10 @@ footer {
     footer {
         background-color: var(--secondary-color);
         color: var(--nav-link-color);
-        font-size: 13px;
+        font-size: 10px;
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column: 1 / 13;
         padding: 30px 30px;
         justify-content: space-around;
         align-items: center;
@@ -405,12 +406,13 @@ footer {
 
     .social {
         display: grid;
-        grid-template-columns: repeat(3, 70px);
-        grid-column: 13;
+        grid-row: 3;
+        grid-column: 1 / 13;
     }
 
     .copy {
-        grid-column: 3 / 12;
+        grid-row: 2;
+        grid-column: 1 / 13;
         text-align: center;
     }
 }
