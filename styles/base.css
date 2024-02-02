@@ -51,7 +51,6 @@ a {
 
 a:hover {
     color: #cd273a;
-    font-size: 30px;
 
 }
 
@@ -89,6 +88,8 @@ h3 {
 
 .card h3 {
     width: 100%;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 
@@ -127,7 +128,6 @@ section {
 .card {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 40px);
     gap: 15px;
 }
 
@@ -140,13 +140,13 @@ section {
 
 .card ul {
     list-style-type: none;
-    margin-top: auto;
-    padding: 10px;
+    margin-top: 0;
+    padding: 20px;
 }
 
 .card li {
-    height: 50px;
-    line-height: 0px;
+    height: 80px;
+    line-height: 40px;
 }
 
 .card a {
