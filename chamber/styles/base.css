@@ -5,8 +5,7 @@
     --primary-color: #ffffff;
     --secondary-color: #9f1a00;
     --accent1-color: #0d090a;
-
-
+    --accent2-color: #cbcbcb;
     /* change the values below to your chosen font(s) */
     --heading-font: "Cinzel", Arial, serif;
     --paragraph-font: "Karla", sans-serif;
@@ -100,7 +99,7 @@ p {
     padding: 0;
     margin: 0;
     font-size: 1.25em;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     font-family: var(--paragraph-font);
     text-align: center;
 }
@@ -159,12 +158,12 @@ nav {
     font-size: 1.5rem;
     border: 1px solid rgba(0, 0, 0, .3);
     padding: 3px 7px 6px;
-    background-color: #eee;
+    background-color: #ffffff;
     color: #000;
     cursor: pointer;
-    position: fixed;
-    top: 20px;
-    right: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     display: none;
 }
 
@@ -174,6 +173,20 @@ nav {
 
 #menu.open::before {
     content: "✖️";
+}
+
+#mode {
+    position: absolute;
+    top: 10px;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
 }
 
 .home-page {
@@ -221,7 +234,7 @@ nav {
 
 .bg {
     height: 300px;
-    background-color: var(--accent1-color);
+    background-color: #cbcbcb;
     grid-column: 1 / 8;
     grid-row: 2;
     margin-top: 150px;
@@ -256,7 +269,8 @@ nav {
     padding: 20px 30px;
     background-color: var(--primary-color);
     text-align: center;
-    margin-left: 170px;
+    position: absolute;
+    left: 170px;
 }
 
 .join:hover {
@@ -285,7 +299,7 @@ nav {
 }
 
 .card1 {
-    background-color: rgb(212, 212, 212);
+    background-color: var(--accent2-color);
     grid-column: 1 / 5;
     grid-row: 4;
     height: 300px;
@@ -295,8 +309,15 @@ nav {
     border: solid;
 }
 
+.card1 h5,
+h6,
+.card2 h5,
+h6 {
+    color: navy;
+}
+
 .card2 {
-    background-color: rgb(247 238 238);
+    background-color: var(--accent2-color);
     grid-column: 5 / 8;
     grid-row: 4;
     height: 300px;
@@ -319,13 +340,17 @@ nav {
 
 footer {
     background-color: var(--secondary-color);
-    color: var(--nav-link-color);
+    color: var(--primary-color);
     font-size: 13px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding: 30px 30px;
     justify-content: space-around;
     align-items: center;
+}
+
+footer p {
+    color: var(--primary-color);
 }
 
 
@@ -378,6 +403,11 @@ footer {
     .logo {
         justify-self: center;
         /* Center the logo horizontally within its column */
+    }
+
+    .join {
+        left: 50px;
+        padding: 10px 20px;
     }
 
     /* Add any other mobile-specific styles here */
