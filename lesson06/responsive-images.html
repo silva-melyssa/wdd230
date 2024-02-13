@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta name="description" content="Responsive Images: srcset">
+    <meta name="author" content="Melyssa Silva">
+    <meta property="og:title" content="Home Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://silva-melyssa.github.io/wdd230/" />
+    <meta property="og:image" content="https://silva-melyssa.github.io/wdd230/images/profilephoto.jpg" />
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="cardston temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
