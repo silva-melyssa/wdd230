@@ -1,0 +1,8 @@
+@media (min-width: 1001px) {
+    .large-label {
+        display: block;
+        top: 250px;
+        left: 600px;
+        padding: 1rem;
+    }
+}

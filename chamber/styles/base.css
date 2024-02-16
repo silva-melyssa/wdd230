@@ -209,6 +209,31 @@ nav {
     margin-top: 20px;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+    display: none;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    background: radial-gradient(#fff, rgb(248 96 93));
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Genos', Helvetica, sans-serif;
+}
+
 #weather {
     grid-column: 1 / 8;
 }
@@ -399,6 +424,11 @@ footer p {
         grid-template-columns: 1fr 2fr 1fr;
     }
 
+    .small-label {
+        display: block;
+        left: 60px;
+        padding: 0.5rem;
+    }
 
     .logo {
         justify-self: center;
