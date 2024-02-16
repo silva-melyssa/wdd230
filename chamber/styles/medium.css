@@ -1,8 +1,8 @@
-@media (min-width: 640px) and (max-width: 1000px) {
+@media (min-width: 501px) and (max-width: 1000px) {
     .medium-label {
         display: block;
         top: 250px;
-        left: 600px;
+        left: 60px;
         padding: 1rem;
     }
 }
