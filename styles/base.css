@@ -116,6 +116,12 @@ h3 {
     grid-row: 1;
 }
 
+.card2 p {
+    grid-column: 1;
+    height: 80px;
+    line-height: 40px;
+    text-align: center;
+}
 
 header {
     background-color: rgb(229 35 72);
