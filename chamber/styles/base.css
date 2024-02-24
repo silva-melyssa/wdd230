@@ -258,6 +258,14 @@ nav {
     color: #fff;
 }
 
+.dark-mode h2 {
+    color: #fff;
+}
+
+.dark-mode .sidebar-section {
+    background-color: #9f1a00
+}
+
 .home-page {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
