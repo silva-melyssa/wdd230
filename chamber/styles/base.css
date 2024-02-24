@@ -153,7 +153,6 @@ a {
 #image-gallery img {
     width: 90%;
     height: auto;
-    margin-left: 20px;
     margin-top: 30px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
