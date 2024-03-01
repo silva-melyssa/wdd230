@@ -1,0 +1,72 @@
+:root {
+    --form-background-color: #f7f7f7;
+    --form-border-color: #ccc;
+    --form-text-color: #333;
+}
+
+form {
+    background-color: var(--form-background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--form-border-color);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+form legend {
+    color: var(--form-text-color);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--form-text-color);
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="range"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--form-border-color);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+form input[type="range"] {
+    width: calc(100% - 30px);
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+form output {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    margin-top: 0.5rem;
+}

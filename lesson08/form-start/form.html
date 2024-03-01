@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson</title>
+    <link href="styles/form.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Melyssa S. Silva</h1>
+        <button id="menu" aria-label="Menu"></button>
+    </header>
+    <nav>
+        <a class="nav-item" href="#">Home</a>
+        <a class="nav-item" href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a class="nav-item" href="chamber/index.html">Chamber</a>
+        <a class="nav-item" href="https://www.byui.edu/">BYU-Idaho</a>
+        <a class="nav-item" href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+    </nav>
+    <main>
+        <form action="record.html" method="get">
+            <fieldset>
+                <legend>Register</legend>
+                <label for="username">Username* </label>
+                <input type="text" name="username" id="username" required><br>
+                <label for="password">Password* </label>
+                <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{8,}"
+                    title="Password must be at least 8 characters and alphanumeric" required><br>
+                <label for="confirmPassword">Confirm Password* </label>
+                <input type="password" name="confirmPassword" id="confirmPassword" oninput="check(this)" required><br>
+                <label for="email">Email* </label>
+                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@byui\.edu$"
+                    title="A valid byui.edu email address." required><br>
+                <label for="pageRating">Page Rating</label>
+                <input type="range" name="pageRating" id="pageRating" min="1" max="10" step="1"
+                    onchange="updateRangeValue()" value="5"><br>
+                <output for="pageRating" id="rangeValue">5</output><br>
+            </fieldset>
+            <input type="submit" value="Send Information" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span></p>
+        <p>Melyssa Santos da Silva</p>
+        <p>Sao Paulo, Brazil</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/password.js"></script>
+</body>
+
+</html>
