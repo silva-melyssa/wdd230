@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard head elements and meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="São Paulo Chamber of Commerce - Fostering Economic Growth">
+    <meta name="author" content="Melyssa Silva">
+    <!-- Style-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Social Media Meta Tags (placeholder values) -->
+    <meta property="og:title" content="São Paulo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://silva-melyssa.github.io/wdd230/chamber/images/masp.png">
+    <meta property="og:url" content="https://www.your-chamber-site.com">
+
+    <!-- Title -->
+    <title>São Paulo Chamber of Commerce</title>
+
+    <!-- Stylesheets and other head elements can be added here -->
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="content">
+        <header>
+            <a id="logo-link" href="index.html">
+                <img class="logo" src="images/logo.webp" alt="São Paulo Chamber of Commerce Logo">
+            </a>
+            <h1>São Paulo Chamber of Commerce</h1>
+            <button id="menu" aria-label="Menu"></button>
+            <div id="mode">
+                🕶️
+            </div>
+            <nav>
+                <a class="nav-item" href="index.html">Home</a>
+                <a class="nav-item" href="join.html">Membership</a>
+                <a class="nav-item" href="companies.html">Companies</a>
+                <a class="nav-item" href="events.html">Events</a>
+            </nav>
+        </header>
+        <!-- Hero Image Section -->
+        <div class="hero">
+            <picture>
+                <!-- Small Image 
+                <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+                 Medium Image 
+                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">-->
+                <!-- Large Image -->
+                <img src="images/masp.webp" alt="masp" width="1500" height="750">
+            </picture>
+            <!-- Labels 
+            <div class="herolabel small-label">
+                <p>Small</p>
+            </div>
+            <div class="herolabel medium-label">
+                <p>Medium</p>
+            </div>
+            <div class="herolabel large-label">
+                <p>Large</p>
+            </div>-->
+        </div>
+        <!-- <section id="hero">
+             Placeholder content for the hero image 
+            <img src="images/masp.webp" alt="São Paulo Chamber of Commerce">
+        </section> -->
+
+        <!-- Main Content Area -->
+        <main class="main-page">
+            <!-- Weather Card Section -->
+            <section id="weather">
+                <div id="weather-container">
+                    <h3>Weather</h3>
+                    <p>Temperature: <span id="temperature">72</span> °F</p>
+                    <p>Wind Speed: <span id="wind-speed">8.5</span> mph</p>
+                    <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+                </div>
+            </section>
+
+            <!-- Company Spotlights Section -->
+            <section id="spotlights">
+                <!-- Placeholder content for company spotlights -->
+                <h2>Company Spotlights</h2>
+                <p>Discover businesses thriving in São Paulo.</p>
+                <!-- Company spotlight details can be added here -->
+            </section>
+            <div class="bg"></div>
+
+            <!-- Call to Action Section -->
+            <section id="msg">
+                <!-- Placeholder content for the call to action -->
+                <p class="join-para">Join the São Paulo Chamber of Commerce and boost your business!</p>
+                <a class="join" href="join.html">Join Now</a>
+            </section>
+            <section id="cta">
+                <img class="sp sp-margin" src="images/sao-paulo.webp" alt="Sao Paulo City">
+            </section>
+
+            <!-- Current Events Section -->
+            <section id="events">
+                <!-- Placeholder content for current events -->
+                <h2>Current Events</h2>
+                <p>Check out the latest happenings in São Paulo.</p>
+                <!-- Event details can be added here -->
+            </section>
+            <section class="card1">
+                <div class="event">
+                    <h5>Carnival Preparations</h5>
+                    <h6>Date: February 10, 2024</h6>
+                    <h6>Location: Anhambi - São Paulo, Brazil</h6>
+                    <p>Description: Preparations for the famous Brazilian Carnival could be underway in São Paulo, with
+                        rehearsals, costume-making workshops, and street parties leading up to the main festivities.</p>
+                </div>
+            </section>
+            <section class="card2">
+                <div class="event">
+                    <h5>Tech Meetups and Hackathons</h5>
+                    <h6>Date: May 15, 2024</h6>
+                    <h6>Location: EXPO - São Paulo, Brazil</h6>
+                    <p>Description: São Paulo hosts tech meetups, hackathons, and innovation events where entrepreneurs,
+                        developers, and tech enthusiasts gather to exchange ideas and showcase innovative projects.</p>
+                </div>
+            </section>
+            <div class="map-container">
+                <iframe class="map-iframe" loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dYOUR_LATITUDE_LONGITUDE!2dYOUR_LONGITUDE!3dYOUR_LATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xYOUR_LATITUDE_LONGITUDE!2sYour%20Home%20Town!5e0!3m2!1sen!2sus!4vYOUR_GOOGLE_MAPS_API_KEY">
+                </iframe>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Contact Information -->
+            <address>
+                São Paulo Chamber of Commerce<br>
+                Address: Your Street, São Paulo<br>
+                Phone: +55 (11) 1234-5678<br>
+                Email: info@saopaulochamber.com
+            </address>
+
+            <!-- Additional Information -->
+            <div class="copy">
+                <p>São Paulo Chamber of Commerce &copy;<span id="year"></span></p>
+                <p>Developed by Melyssa Silva for WDD 230</p>
+                <p>Sao Paulo, Brazil</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.webp" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.webp" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+        <!-- JavaScript for dynamically updating last modified date -->
+        <script src="scripts/getdates.js"></script>
+        <!-- JavaScript for weather -->
+        <script src="scripts/weather.js"></script>
+        <!-- JavaScript for the hamburger menu -->
+        <script src="scripts/menu.js"></script>
+        <!-- JavaScript for the dark mode -->
+        <script src="scripts/dark.js"></script>
+        <!-- JavaScript for the wind chill -->
+        <script src="scripts/windchill.js"></script>
+    </div>
+</body>
+
+</html>
