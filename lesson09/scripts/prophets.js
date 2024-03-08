@@ -10,28 +10,30 @@ async function getProphetData() {
 function displayProphets(prophets) {
     prophets.forEach(prophet => {
         let card = document.createElement('section');
-        let fullName = document.createElement('h2');
-        let birthInfo = document.createElement('p');
-        let birthPlace = document.createElement('p');
-        let portrait = document.createElement('img');
+        card.classList.add('card');
 
+        let fullName = document.createElement('h2');
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        card.appendChild(fullName);
+
+        let birthInfo = document.createElement('p');
         birthInfo.textContent = `Date of Birth: ${prophet.birthdate}`;
+        card.appendChild(birthInfo);
+
+        let birthPlace = document.createElement('p');
         birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
+        card.appendChild(birthPlace);
+
+        let portrait = document.createElement('img');
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
-
-        card.appendChild(fullName);
-        card.appendChild(birthInfo);
-        card.appendChild(birthPlace);
+        portrait.classList.add('portrait'); // Add a class for styling
         card.appendChild(portrait);
 
-        card.classList.add('card');
         cards.appendChild(card);
     });
 }
+
 
 getProphetData();
