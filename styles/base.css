@@ -107,7 +107,6 @@ h3 {
     background-color: #cd273a;
     color: white;
     margin: 0;
-    height: 100%;
 }
 
 .card h3 {
@@ -174,10 +173,6 @@ section {
     padding: 20px;
 }
 
-.card li {
-    height: 80px;
-    line-height: 40px;
-}
 
 .card a {
     color: #0000ee;
