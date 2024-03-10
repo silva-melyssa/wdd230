@@ -1,0 +1,143 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/desigh.html",
+                    "title": "Design Document"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://codepen.io/MelyssaSSilva/pen/OJqxWry",
+                    "title": "Pseudo-elements"
+                },
+                {
+                    "url": "https://codepen.io/MelyssaSSilva/pen/KKEXmLw",
+                    "title": "`Hamburger` Menu"
+                },
+                {
+                    "url": "images/screenshot.png",
+                    "title": "Click here to view the image"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "video/video.html",
+                    "title": "Student Presentations"
+                },
+                {
+                    "url": "https://codepen.io/MelyssaSSilva/pen/JjzpXdV",
+                    "title": "CSS Pseudo-Classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon - top 10"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "Landscape image webp"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Images"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "Book of Mormon - Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table"
+                },
+                {
+                    "url": "lesson08/form-start/index.html",
+                    "title": "Form"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        },
+        {
+            "lesson": "010",
+            "links": [
+                {
+                    "url": "lesson010",
+                    "title": "#"
+                },
+                {
+                    "url": "lesson010",
+                    "title": "#"
+                }
+            ]
+        },
+        {
+            "lesson": "011",
+            "links": [
+                {
+                    "url": "lesson011",
+                    "title": "#"
+                },
+                {
+                    "url": "lesson011",
+                    "title": "#"
+                }
+            ]
+        }
+    ]
+}
