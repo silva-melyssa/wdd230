@@ -1,74 +1,65 @@
 [
     {
-        "name": "Company A",
-        "address": "123 Main St, City, Country",
-        "phone": "123-456-7890",
-        "website": "https://www.companyA.com",
+        "name": "Theatro Municipal",
+        "address": "Praça Ramos de Azevedo, s/nº Sé - São Paulo, SP",
+        "phone": "55 11 3367 7200",
+        "website": "https://theatromunicipal.org.br/pt-br/",
+        "image": "chamber/images/theatro.webp",
+        "membership_level": "Gold",
+        "other_info": "Atendimento presencial Bilheteria Segunda a sexta, das 10h às 19h Sábado, domingo e feriado, das 10h às 17h"
+    },
+    {
+        "name": "Parque do Ibirapuera",
+        "address": "Av. Pedro Álvares Cabral, s/n - Vila Mariana - SP",
+        "phone": "(11) 3889-3000",
+        "website": "https://www.parquedoibirapuera.org/",
+        "image": "companyB.jpg",
+        "membership_level": "Silver",
+        "other_info": "O Parque Ibirapuera é um dos pontos mais atrativos de São Paulo."
+    },
+    {
+        "name": "MASP",
+        "address": "AV Paulista, 1578, 01310-200 São Paulo-Brasil",
+        "phone": "+55 11 3149 5959",
+        "website": "https://masp.org.br/",
         "image": "companyA.jpg",
         "membership_level": "Gold",
-        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "other_info": "MUSEU DE ARTE DE SÃO PAULO ASSIS CHATEAUBRIAND"
     },
     {
-        "name": "Company B",
-        "address": "456 Elm St, City, Country",
-        "phone": "987-654-3210",
-        "website": "https://www.companyB.com",
+        "name": "Itaú Cultural",
+        "address": "Avenida Paulista, 149, São Paulo",
+        "phone": "11 2168 1777",
+        "website": "https://www.itaucultural.org.br/",
         "image": "companyB.jpg",
         "membership_level": "Silver",
-        "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "other_info": "Terça a sábado (11h às 20h) Domingos e feriados (11h às 19h) Entrada gratuita"
     },
     {
-        "name": "Company A",
-        "address": "123 Main St, City, Country",
-        "phone": "123-456-7890",
-        "website": "https://www.companyA.com",
+        "name": "Pinacoteca",
+        "address": "Praça da Luz, 2",
+        "phone": "+55 11 3324.1000",
+        "website": "https://pinacoteca.org.br/",
         "image": "companyA.jpg",
         "membership_level": "Gold",
-        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "other_info": "Você pode apoiar a Pinacoteca de várias formas e contribuir para o nosso trabalho."
     },
     {
-        "name": "Company B",
-        "address": "456 Elm St, City, Country",
-        "phone": "987-654-3210",
-        "website": "https://www.companyB.com",
+        "name": "Suzano",
+        "address": "Av. Brigadeiro Faria Lima, 1.355 - 8º andar – Pinheiros São Paulo - SP - Brasil",
+        "phone": "(11) 3503-9000",
+        "website": "https://www.suzano.com.br/",
         "image": "companyB.jpg",
         "membership_level": "Silver",
-        "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "other_info": "Criamos soluções sustentáveis para renovar a vida das pessoas e do planeta a partir da árvore."
     },
     {
-        "name": "Company A",
-        "address": "123 Main St, City, Country",
-        "phone": "123-456-7890",
-        "website": "https://www.companyA.com",
-        "image": "companyA.jpg",
-        "membership_level": "Gold",
-        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        "name": "Company B",
-        "address": "456 Elm St, City, Country",
-        "phone": "987-654-3210",
-        "website": "https://www.companyB.com",
+        "name": "Vivo",
+        "address": "Av. Engenheiro Luiz Carlos Berrini, 1376, Cidade Monções.",
+        "phone": "0800 770 9800",
+        "website": "https://www.vivo.com.br/",
         "image": "companyB.jpg",
         "membership_level": "Silver",
-        "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        "name": "Company B",
-        "address": "456 Elm St, City, Country",
-        "phone": "987-654-3210",
-        "website": "https://www.companyB.com",
-        "image": "companyB.jpg",
-        "membership_level": "Silver",
-        "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        "name": "Company B",
-        "address": "456 Elm St, City, Country",
-        "phone": "987-654-3210",
-        "website": "https://www.companyB.com",
-        "image": "companyB.jpg",
-        "membership_level": "Silver",
-        "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "other_info": "Somos uma empresa completa"
     }
 ]
