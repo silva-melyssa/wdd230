@@ -117,8 +117,8 @@
             "lesson": "010",
             "links": [
                 {
-                    "url": "lesson010",
-                    "title": "#"
+                    "url": "lesson010/weather.html",
+                    "title": "Weather in Germany"
                 },
                 {
                     "url": "lesson010",
