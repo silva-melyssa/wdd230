@@ -122,6 +122,11 @@ h3 {
     text-align: center;
 }
 
+figure {
+    text-align: center;
+    margin: auto;
+}
+
 header {
     background-color: rgb(229 35 72);
     display: grid;

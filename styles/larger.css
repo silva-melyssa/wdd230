@@ -25,7 +25,8 @@
     }
 
     img {
-        width: 120px;
+        width: 50px;
+        align-items: center;
     }
 
     main {
