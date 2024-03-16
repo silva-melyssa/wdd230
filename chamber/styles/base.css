@@ -37,12 +37,17 @@ body {
 }
 
 img {
-    max-width: 100%;
+    margin-top: 15px;
+    max-width: 120%;
+    margin-left: 15PX;
+
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 
@@ -142,7 +147,7 @@ nav {
 /* Grid Layout Styles */
 .grid-default {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 200px);
     gap: 4em 0;
 }
@@ -150,7 +155,167 @@ nav {
 /* Sidebar Layout Styles */
 .main-page {
     display: grid;
-    row-gap: 30px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 400px);
+    gap: 20px;
+}
+
+/* Weather Section Styles */
+#weather {
+    grid-column: 1 / span 7;
+    grid-row: 1;
+}
+
+#weather-container {
+    display: flex;
+    background-color: var(--accent2-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-box {
+    flex: 1;
+    text-align: center;
+}
+
+#current-temp {
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+#weather-icon {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+figcaption {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+
+/* CSS for the cards layout */
+
+#spotlights {
+    grid-row: 2;
+    grid-column: 1 / 8;
+}
+
+.bg {
+    height: 300px;
+    background-color: #cbcbcb;
+    grid-column: 1 / 8;
+    grid-row: 2;
+    margin-top: 150px;
+}
+
+#msg {
+    background-color: #9f1a00;
+    grid-column: 1 / 8;
+    grid-row: 3;
+    position: relative;
+    margin-top: 60px;
+    z-index: 1;
+}
+
+.join-para {
+    color: var(--primary-color);
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.join {
+    color: black;
+    padding: 20px 30px;
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-left: 170px;
+    margin-top: 100px;
+    position: absolute;
+    left: 500px;
+}
+
+
+.join:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    font-size: 17px;
+}
+
+.sp {
+    width: 30%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.sp-margin {
+    margin-top: 90px;
+    margin-left: 30px;
+}
+
+#cta {
+    grid-row: 3;
+    grid-column: 1 / 5;
+    width: 90%;
+}
+
+#cta img {
+    grid-row: 3;
+}
+
+#events {
+    grid-row: 4;
+    grid-column: 1/ 8;
+}
+
+.card1,
+.card2 {
+    grid-row: 4;
+    height: 300px;
+    margin-top: 100px;
+    background-color: #f0f0f0;
+    /* Adjust the background color as needed */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card1 h5,
+.card2 h5 {
+    margin-top: 0;
+    color: #9f1a00;
+    /* Adjust the text color as needed */
+}
+
+.card1 p,
+.card2 p {
+    margin-bottom: 0;
+}
+
+.card1 {
+    grid-column: 1 / 4;
+}
+
+.card2 {
+    grid-column: 4 / 8;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.map-iframe {
+    width: 90%;
+    height: 40vh;
+    border: 0;
 }
 
 /* ------------------ Styles for grid view ------------------ */

@@ -17,13 +17,13 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- Social Media Meta Tags (placeholder values) -->
-    <meta property="og:title" content="Directory of Members - São Paulo Chamber of Commerce">
+    <meta property="og:title" content="São Paulo Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://silva-melyssa.github.io/wdd230/chamber/images/masp.png">
     <meta property="og:url" content="https://www.your-chamber-site.com">
 
     <!-- Title -->
-    <title>Directory of Members - São Paulo Chamber of Commerce</title>
+    <title>São Paulo Chamber of Commerce</title>
 
     <!-- Stylesheets and other head elements can be added here -->
 </head>
@@ -46,6 +46,9 @@
                 <a class="nav-item" href="companies.html">Companies</a>
                 <a class="nav-item" href="events.html">Events</a>
             </nav>
+            <div id="chamber-banner" style="display: none;">
+                <p>Join us for a Chamber of Commerce meet and greet on Wednesday at 7:00 pm!</p>
+            </div>
         </header>
         <!-- Hero Image Section -->
         <div class="hero">
@@ -74,16 +77,69 @@
         </section> -->
 
         <!-- Main Content Area -->
-        <main>
-            <div class="menu">
-                <button id="grid">Grid</button>
-                <button id="list">List</button>
-            </div>
-            <hr>
-            <article id="display"></article>
+        <main class="main-page">
+            <!-- Weather Card Section -->
+            <section id="weather">
+                <div id="weather-container">
+                    <p><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="default-icon.png" alt="">
+                        <figcaption id="weather-desc"></figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Company Spotlights Section -->
+            <section id="spotlights">
+                <!-- Placeholder content for company spotlights -->
+                <h2>Company Spotlights</h2>
+                <p>Discover businesses thriving in São Paulo.</p>
+                <!-- Company spotlight details can be added here -->
+            </section>
+            <div class="bg"></div>
+
+            <!-- Call to Action Section -->
+            <section id="msg">
+                <!-- Placeholder content for the call to action -->
+                <p class="join-para">Join the São Paulo Chamber of Commerce and boost your business!</p>
+                <a class="join" href="join.html">Join Now</a>
+            </section>
+            <section id="cta">
+                <img class="sp sp-margin" src="images/sao-paulo.webp" alt="Sao Paulo City">
+            </section>
+
+            <!-- Current Events Section -->
+            <section id="events">
+                <!-- Placeholder content for current events -->
+                <h2>Current Events</h2>
+                <p>Check out the latest happenings in São Paulo.</p>
+                <!-- Event details can be added here -->
+            </section>
+            <section class="card1">
+                <div class="event">
+                    <h5>Carnival Preparations</h5>
+                    <h6>Date: February 10, 2024</h6>
+                    <h6>Location: Anhambi - São Paulo, Brazil</h6>
+                    <p>Description: Preparations for the famous Brazilian Carnival could be underway in São Paulo, with
+                        rehearsals, costume-making workshops, and street parties leading up to the main festivities.</p>
+                </div>
+            </section>
+            <section class="card2">
+                <div class="event">
+                    <h5>Tech Meetups and Hackathons</h5>
+                    <h6>Date: May 15, 2024</h6>
+                    <h6>Location: EXPO - São Paulo, Brazil</h6>
+                    <p>Description: São Paulo hosts tech meetups, hackathons, and innovation events where entrepreneurs,
+                        developers, and tech enthusiasts gather to exchange ideas and showcase innovative projects.</p>
+                </div>
+            </section>
         </main>
 
-
+        <div class="map-container">
+            <iframe class="map-iframe" loading="lazy" allowfullscreen
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dYOUR_LATITUDE_LONGITUDE!2dYOUR_LONGITUDE!3dYOUR_LATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xYOUR_LATITUDE_LONGITUDE!2sYour%20Home%20Town!5e0!3m2!1sen!2sus!4vYOUR_GOOGLE_MAPS_API_KEY">
+            </iframe>
+        </div>
         <!-- Footer -->
         <footer>
             <!-- Contact Information -->
@@ -113,8 +169,8 @@
                     <img src="images/instagram.webp" alt="instagram icon">
                 </a>
             </div>
+
         </footer>
-        <script src="scripts/membership.js"></script>
         <!-- JavaScript for dynamically updating last modified date -->
         <script src="scripts/getdates.js"></script>
         <!-- JavaScript for weather -->
@@ -125,6 +181,7 @@
         <script src="scripts/dark.js"></script>
         <!-- JavaScript for the wind chill -->
         <script src="scripts/windchill.js"></script>
+        <script src="scripts/banner.js"></script>
     </div>
 </body>
 
