@@ -1,5 +1,5 @@
 const currentTemp = document.querySelector('#current-temp');
-const weatherDesc = document.querySelector('#weather-desc'); // Added selector for weather description
+const weatherDesc = document.querySelector('#weather-desc');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const weatherContainer = document.getElementById('weather-container');
@@ -39,33 +39,56 @@ function displayThreeDayForecast(forecastList) {
     // Clear previous forecast
     weatherContainer.innerHTML = '';
 
-    // Display weather for the next 3 days, starting from the second item
-    const threeDays = forecastList.slice(1, 4);
-    threeDays.forEach(day => {
+    // Get today's date
+    const today = new Date();
+    // Get tomorrow's date
+    const tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
+    // Get the day after tomorrow's date
+    const dayAfterTomorrow = new Date(today);
+    dayAfterTomorrow.setDate(today.getDate() + 2);
+
+    // Filter forecast data for the next three days
+    const filteredForecast = forecastList.filter(day => {
+        const forecastDate = new Date(day.dt * 1000);
+        // Check if the forecast date is today, tomorrow, or the day after tomorrow
+        return (
+            forecastDate.getDate() === today.getDate() ||
+            forecastDate.getDate() === tomorrow.getDate() ||
+            forecastDate.getDate() === dayAfterTomorrow.getDate()
+        );
+    });
+
+    // Object to store forecast data for each day
+    const forecastDataByDate = {};
+
+    // Group forecast data by date
+    filteredForecast.forEach(day => {
+        const forecastDate = new Date(day.dt * 1000).toLocaleDateString();
+        if (!forecastDataByDate[forecastDate]) {
+            forecastDataByDate[forecastDate] = day;
+        }
+    });
+
+    // Display forecast for each day
+    Object.values(forecastDataByDate).forEach(dayForecast => {
         const weatherBox = document.createElement('div');
         weatherBox.classList.add('weather-box');
 
-        const date = new Date(day.dt * 1000);
+        const date = new Date(dayForecast.dt * 1000);
         const options = { weekday: 'short', month: 'short', day: 'numeric' };
         const formattedDate = date.toLocaleDateString('en-US', options);
 
         weatherBox.innerHTML = `
             <div class="date">${formattedDate}</div>
-            <img class="weather-icon" src="https://openweathermap.org/img/w/${day.weather[0].icon}.png" alt="${day.weather[0].description}">
-            <div class="temperature">${Math.round(day.main.temp)}°F</div>
-            <div class="description">${day.weather[0].description}</div>
+            <img class="weather-icon" src="https://openweathermap.org/img/w/${dayForecast.weather[0].icon}.png" alt="${dayForecast.weather[0].description}">
+            <div class="temperature">${Math.round(dayForecast.main.temp)}°F</div>
+            <div class="description">${dayForecast.weather[0].description}</div>
         `;
 
         weatherContainer.appendChild(weatherBox);
     });
 }
 
-
-
-// Check if today is Monday, Tuesday, or Wednesday to display the banner
-const today = new Date().getDay();
-if (today >= 1 && today <= 3) { // 0 is Sunday, 1 is Monday, 2 is Tuesday, 3 is Wednesday
-    banner.style.display = 'block';
-}
 
 apiFetch();
