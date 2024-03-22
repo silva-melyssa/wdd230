@@ -22,7 +22,7 @@ function fetchDataAndDisplay() {
             data.forEach(member => {
                 const section = document.createElement("section");
                 section.innerHTML = `
-                    <img src="data/${member.image}" alt="${member.name}" />
+                    <img src="${member.image}" alt="${member.name}" />
                     <h3>${member.name}</h3>
                     <p>${member.address}</p>
                     <a href="${member.website}" target="_blank">Website</a>

@@ -1,64 +1,64 @@
 [
     {
+        "image": "images/theatro.webp",
         "name": "Theatro Municipal",
         "address": "Praça Ramos de Azevedo, s/nº Sé - São Paulo, SP",
         "phone": "55 11 3367 7200",
         "website": "https://theatromunicipal.org.br/pt-br/",
-        "image": "chamber/images/theatro.jpeg",
         "membership_level": "Gold",
         "other_info": "Atendimento presencial Bilheteria Segunda a sexta, das 10h às 19h Sábado, domingo e feriado, das 10h às 17h"
     },
     {
+        "image": "images/ibira.webp",
         "name": "Parque do Ibirapuera",
         "address": "Av. Pedro Álvares Cabral, s/n - Vila Mariana - SP",
         "phone": "(11) 3889-3000",
         "website": "https://www.parquedoibirapuera.org/",
-        "image": "chamber/images/parque.jpg",
         "membership_level": "Silver",
         "other_info": "O Parque Ibirapuera é um dos pontos mais atrativos de São Paulo."
     },
     {
+        "image": "images/masp.webp",
         "name": "MASP",
         "address": "AV Paulista, 1578, 01310-200 São Paulo-Brasil",
         "phone": "+55 11 3149 5959",
         "website": "https://masp.org.br/",
-        "image": "chamber/images/masp.jpg",
         "membership_level": "Gold",
         "other_info": "MUSEU DE ARTE DE SÃO PAULO ASSIS CHATEAUBRIAND"
     },
     {
+        "image": "images/itau.webp",
         "name": "Itaú Cultural",
         "address": "Avenida Paulista, 149, São Paulo",
         "phone": "11 2168 1777",
         "website": "https://www.itaucultural.org.br/",
-        "image": "chamber/images/itaucultural.jpg",
         "membership_level": "Silver",
         "other_info": "Terça a sábado (11h às 20h) Domingos e feriados (11h às 19h) Entrada gratuita"
     },
     {
+        "image": "images/pinacoteca.webp",
         "name": "Pinacoteca",
         "address": "Praça da Luz, 2",
         "phone": "+55 11 3324.1000",
         "website": "https://pinacoteca.org.br/",
-        "image": "chamber/images/pinacoteca.jpg",
         "membership_level": "Gold",
         "other_info": "Você pode apoiar a Pinacoteca de várias formas e contribuir para o nosso trabalho."
     },
     {
+        "image": "images/suzano.webp",
         "name": "Suzano",
         "address": "Av. Brigadeiro Faria Lima, 1.355 - 8º andar – Pinheiros São Paulo - SP - Brasil",
         "phone": "(11) 3503-9000",
         "website": "https://www.suzano.com.br/",
-        "image": "chamber/images/suzano.jpg",
         "membership_level": "Silver",
         "other_info": "Criamos soluções sustentáveis para renovar a vida das pessoas e do planeta a partir da árvore."
     },
     {
+        "image": "images/vivo.webp",
         "name": "Vivo",
         "address": "Av. Engenheiro Luiz Carlos Berrini, 1376, Cidade Monções.",
         "phone": "0800 770 9800",
         "website": "https://www.vivo.com.br/",
-        "image": "chamber/images/vivo.jpg",
         "membership_level": "Silver",
         "other_info": "Somos uma empresa completa"
     }
