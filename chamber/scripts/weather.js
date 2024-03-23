@@ -3,7 +3,6 @@ const weatherDesc = document.querySelector('#weather-desc');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const weatherContainer = document.getElementById('weather-container');
-const banner = document.getElementById('banner');
 
 const currentWeatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=-23.6546&lon=-46.6101&units=imperial&appid=137eb57a40fdc70ca2462601b7246a2d";
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=-23.6546&lon=-46.6101&units=imperial&appid=137eb57a40fdc70ca2462601b7246a2d";
@@ -28,11 +27,22 @@ async function apiFetch() {
 }
 
 function displayCurrentWeather(currentData) {
-    currentTemp.innerHTML = `${currentData.main.temp}&deg;F`;
+    const temperatureFahrenheit = currentData.main.temp;
+    const windSpeed = currentData.wind.speed;
+
+    // Display current temperature
+    currentTemp.innerHTML = `${temperatureFahrenheit}&deg;F`;
+
+    // Calculate and display wind chill
+    const windChillValue = calculateWindChill(temperatureFahrenheit, windSpeed);
+    document.getElementById('wind-chill').innerText = windChillValue;
+
+    // Display weather description and icon
     weatherDesc.textContent = currentData.weather[0].description;
     const iconsrc = `https://openweathermap.org/img/w/${currentData.weather[0].icon}.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', currentData.weather[0].description);
+
 }
 
 function displayThreeDayForecast(forecastList) {
@@ -89,6 +99,5 @@ function displayThreeDayForecast(forecastList) {
         weatherContainer.appendChild(weatherBox);
     });
 }
-
 
 apiFetch();

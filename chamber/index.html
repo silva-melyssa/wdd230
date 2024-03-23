@@ -67,15 +67,22 @@
         <!-- Main Content Area -->
         <main class="main-page">
             <!-- Weather Card Section -->
+            <div id="current-weather">
+                <h3>Weather Now</h3>
+                <p>Temperature: <span id="current-temp"></span></p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+            </div>
             <section id="weather">
                 <div id="weather-container">
-                    <p><span id="current-temp"></span></p>
+
                     <figure>
-                        <img id="weather-icon" src="default-icon.png" alt="">
+                        <img id="weather-icon" src="#" alt="">
                         <figcaption id="weather-desc"></figcaption>
                     </figure>
                 </div>
             </section>
+
 
             <!-- Company Spotlights Section -->
             <section id="spotlights">
