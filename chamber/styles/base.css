@@ -149,6 +149,7 @@ nav {
 }
 
 .dark-mode #chamber-banner p,
+#current-weather p,
 .companies p,
 .card1 p,
 .card2 p,
@@ -156,6 +157,7 @@ nav {
 .card2 h6 {
     color: black;
 }
+
 
 #chamber-banner {
     position: fixed;
@@ -199,6 +201,7 @@ nav {
 #weather {
     grid-column: 3 / span 7;
     grid-row: 1;
+    color: black;
 }
 
 #current-weather {
@@ -228,6 +231,7 @@ nav {
 .weather-box {
     flex: 1;
     text-align: center;
+    color: black;
 }
 
 #current-temp {
