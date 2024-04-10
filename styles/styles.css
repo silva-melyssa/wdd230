@@ -473,6 +473,7 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: var(--orange);
+    color: var(--blue);
 }
 
 form output {
