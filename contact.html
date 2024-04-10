@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Contact</title>
+    <meta name="description"
+        content="This website is a fictitious motor scooter rental company - Melyssa Silva - Home Page">
+    <meta name="author" content="Melyssa Silva">
+    <meta property="og:title" content="Home Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://silva-melyssa.github.io/wdd230/" />
+    <meta property="og:image" content="https://silva-melyssa.github.io/wdd230/images/profilephoto.webp" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Main content -->
+    <header>
+        <div class="content">
+            <h1 class="brand"><strong>Scoots</strong></h1>
+            <!-- Navigation and contact information -->
+            <nav class="nav-bar">
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <a href="scoots.html">Home</a>
+                    <a href="rentals.html">Rentals</a>
+                    <a href="reservations.html">Reservation</a>
+                    <a href="contact.html">Contact Us</a>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    <!-- Call to action button for rental reservations -->
+                    <button class="reservationButton" type="button">Rent Now</button>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </nav>
+            <div class="header-block">
+                <div class="text">
+                    <h2>Contact Us For More Information</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus.</p>
+                </div>
+                <img src="images/scooter-header.webp" alt="Scooter">
+            </div>
+        </div>
+
+    </header>
+    <section class="contact-info">
+        <div class="contact-details">
+            <h2>Contact Us</h2>
+            <h3>For any inquiries or assistance, please feel free to contact us using the information below:</h3>
+            <ul>
+                <li><strong>Address:</strong> 📍 Playa del Carmen-Cozumel Ferry dock: 123 Main Street, Cozumel,
+                    Mexico
+                </li>
+                <li><strong>Address:</strong> 📍 Terminal Puerta Maya: 123 Main Street, Cozumel, Mexico
+                </li>
+                <li><strong>Phone:</strong> +123-456-7890</li>
+                <li><strong>Email:</strong> info@example.com</li>
+            </ul>
+        </div>
+        <!-- Embedded Google map -->
+        <div class="map">
+            <div class="playa-map">
+                <!-- Replace the src attribute value with the embed code for your Google map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14947.486801617502!2d-86.96036758760546!3d20.511485094867282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFERRY%20TO%20PLAYA%20DEL%20CARMEN!5e0!3m2!1spt-BR!2sbr!4v1712662278143!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="term-map">
+                <!-- Replace the src attribute value with the embed code for your Google map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5882.928234527074!2d-86.97658873688914!3d20.47701066043485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1spt-BR!2sbr!4v1712662888236!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="main">
+            <div class="content footer-links">
+                <div class="footer-company">
+                    <h4>Company</h4>
+                    <h6>About</h6>
+                    <h6>Contact</h6>
+                </div>
+                <div class="footer-rental">
+                    <h4>Rental</h4>
+                    <h6>Reservation</h6>
+                    <h6>Walk-In</h6>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect with Us</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="images/instagram.webp" alt="Instagram">
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/facebook.webp" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <h6>+52 123-456-7890</h6>
+                    <h6>info@example.com</h6>
+                    <h6>Playa del Carmen-Cozumel Ferry dock</h6>
+                    <h6>Terminal Puerta Maya</h6>
+                </div>
+            </div>
+        </div>
+        <div class="last">&copy; 2024 - Developed by Melyssa Silva for WDD 230</div>
+    </footer>
+    <script src="scripts/button.js"></script>
+</body>
+
+</html>

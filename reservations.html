@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Reservation</title>
+    <meta name="description"
+        content="This website is a fictitious motor scooter rental company - Melyssa Silva - Home Page">
+    <meta name="author" content="Melyssa Silva">
+    <meta property="og:title" content="Home Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://silva-melyssa.github.io/wdd230/" />
+    <meta property="og:image" content="https://silva-melyssa.github.io/wdd230/images/profilephoto.webp" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Main content -->
+    <header>
+        <div class="content">
+            <h1 class="brand"><strong>Scoots</strong></h1>
+            <!-- Navigation and contact information -->
+            <nav class="nav-bar">
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <a href="scoots.html">Home</a>
+                    <a href="rentals.html">Rentals</a>
+                    <a href="reservations.html">Reservation</a>
+                    <a href="contact.html">Contact Us</a>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    <!-- Call to action button for rental reservations -->
+                    <button class="reservationButton" type="button">Rent Now</button>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </nav>
+            <div class="header-block">
+                <div class="text">
+                    <h2>The perfect time to make your reservation is now!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, possimus.</p>
+                </div>
+                <img src="images/jeep.webp" alt="jeep">
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Rental agreement information and reservation form -->
+    <section class="reservation-form">
+        <div class="titulo">
+            <h1>Rental Reservation Form</h1>
+        </div>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Rental Details</legend>
+                <label for="date">Date:*</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="period">Period:*</label>
+                <input type="text" id="period" name="period" required>
+
+                <label for="rental-type">Rental Type:*</label>
+                <input type="text" id="rental-type" name="rental-type" required>
+
+                <label for="number">Number:*</label>
+                <input type="number" id="number" name="number" required>
+
+                <label for="phone">Phone Number:*</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+
+                <label for="name">Name:*</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="state-country">State/Country:*</label>
+                <input type="text" id="state-country" name="state-country" required>
+
+                <label for="cruise-line">Cruise Line:</label>
+                <input type="text" id="cruise-line" name="cruise-line">
+
+                <label for="accommodations">Special Accommodations/Comments:</label>
+                <textarea id="accommodations" name="accommodations"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit Reservation" class="submitBtn">
+        </form>
+        <div class="agreement-info">
+            <aside id="sidebar">
+                <section class="sidebar-section">
+                    <h1>Rental Agreement Information</h1>
+                    <p>Please read the following terms and conditions carefully before making a reservation:</p>
+
+                    <h2>Rental Services and Agreements</h2>
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at the time of rental.</li>
+                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insurance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                        <li>Rentals may be returned to either physical location.</li>
+                    </ul>
+
+                    <h2>Liability Disclaimer</h2>
+                    <p>We are not responsible for any accidents, injuries, or damages that may occur during the rental
+                        period. Renters assume all liability for the use of the rented equipment or vehicle.</p>
+
+                    <h2>Privacy Policy</h2>
+                    <p>Any personal information collected through the reservation process will be used solely for the
+                        purpose of completing your reservation and will not be shared with third parties.</p>
+                </section>
+            </aside>
+        </div>
+    </section>
+    </section>
+    <footer>
+        <div class="main">
+            <div class="content footer-links">
+                <div class="footer-company">
+                    <h4>Company</h4>
+                    <h6>About</h6>
+                    <h6>Contact</h6>
+                </div>
+                <div class="footer-rental">
+                    <h4>Rental</h4>
+                    <h6>Reservation</h6>
+                    <h6>Walk-In</h6>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect with Us</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="images/instagram.webp" alt="Instagram">
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/facebook.webp" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <h6>+52 123-456-7890</h6>
+                    <h6>info@example.com</h6>
+                    <h6>Playa del Carmen-Cozumel Ferry dock</h6>
+                    <h6>Terminal Puerta Maya</h6>
+                </div>
+            </div>
+        </div>
+        <div class="last">&copy; 2024 - Developed by Melyssa Silva for WDD 230</div>
+    </footer>
+    <script src="scripts/button.js"></script>
+</body>
+
+</html>
